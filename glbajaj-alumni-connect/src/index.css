@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px; /* Exact GLBITM baseline: font-size: 14px */
+  }
+  
+  body {
+    background-color: #fdfbf7;
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4; /* Exact GLBITM body line-height: 1.4 */
+    font-weight: 400;
+  }
+
+  /* GLBITM Heading styling directly from glbitm.org style.css */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+
+  h5 {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+
+  h6 {
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #444444;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf6eb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d7ab4b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #592106;
+}
+
+/* GLBITM Signature Header & Cards */
+.glbitm-header-bar {
+  background: #592106;
+  border-bottom: 3px solid #ffcc4e;
+}
+
+.glbitm-top-strip {
+  background: #472510;
+  border-bottom: 1px solid rgba(255, 204, 78, 0.2);
+  color: #faf6eb;
+}
+
+.card-hover {
+  transition: all 0.25s ease-in-out;
+}
+
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px -8px rgba(71, 37, 16, 0.14), 0 4px 10px -2px rgba(89, 33, 6, 0.05);
+}
+
+.glow-glbitm {
+  box-shadow: 0 0 25px -4px rgba(89, 33, 6, 0.35);
+}
+
+.glow-gold {
+  box-shadow: 0 0 25px -4px rgba(255, 204, 78, 0.5);
+}
